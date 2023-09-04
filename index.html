@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<style>
+    #map{
+    height: 100%;
+        width: 100%;
+        z-index: 0;
+}
+</style>
+<body>
+    
+    <div class="sidebar">
+        <ul> 
+            <li class="topico">
+                Ferramentas
+            </li>
+            <li class="destaque">
+               <img src="assets/img/explorar.png" alt=""> Explorar
+            </li>
+            <li class="destaque">
+                <img src="assets/img/radar.png" alt=""> Operação
+            </li>
+            <hr>
+            <li class="topico">
+                Demandas
+            </li>
+            <li class="destaque">
+                <img src="assets/img/frete.png" alt=""> Fretes
+            </li>
+            <li class="destaque">
+                <img src="assets/img/marketplace.png"> Marketplace
+            </li>
+            <hr>
+            <li class="topico">
+                Acompanhamento
+            </li>
+            <li class="destaque">
+                <img src="assets/img/analise.png"> Análises
+            </li>
+            <li class="destaque">
+                <img src="assets/img/relatorio.png"> Relatórios
+            </li>
+            <hr>
+            <li class="topico">
+                Dados Cadastrados
+            </li>
+            <li class="destaque">
+                <img src="assets/img/rotas.png"> Rotas
+            </li>
+            <li class="destaque">
+                <img src="assets/img/motoristas.png"> Motoristas
+            </li>
+            <hr>
+            <li class="topico">
+                Comunicação
+            </li>
+            <li class="destaque">
+                <img src="assets/img/aprovacoes.png"> Aprovações
+            </li>
+            <li class="destaque"> 
+                <img src="assets/img/chat.png"> Chat
+            </li>
+            <hr>
+            <li class="topico">
+                Setup
+            </li>
+            <li  class="destaque">
+                <img src="assets/img/preferencias.png"> Preferências
+            </li>
+            <li  class="destaque">
+                <img src="assets/img/admin.png"> Admin
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="navbar">
+            <h3>SUMA FRETES</h3>
+            <div class="iconUser">
+
+            </div>
+        </div>
+        <div class="content">
+            <div id="map">
+
+                
+
+                <div class="cardDemand">
+
+                </div>
+
+            </div>
+            <div class="menu">
+                <ul class="topdeskto">
+                    <li>
+                        <span>
+                           <img src="assets/img/calendar.png" alt=""> Programacao
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            Fretes
+                        </span>
+                    </li>
+                </ul>
+                <div class="cardmenu">
+                    <div class="rotas">
+                        <ul>
+                            <li class="titl">
+                                Origem
+                            </li>
+                            <li  class="gtrd">
+                                Brasília / DF
+                            </li>
+                            <li  class="titl">
+                                Destino
+                            </li>
+                            <li  class="gtrd">
+                                Santos / SP
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rotas">
+                        <ul>                            
+                            <li  class="gtrd">
+                               <img src="assets/img/estrada.png" alt=""> 1231 km
+                            </li>
+                            <li  class="gtrd">
+                                <img src="assets/img/peso.png" alt=""> 123 ton
+                             </li>
+                             <li  class="gtrd">
+                                <img src="assets/img/estrada-com-pedagio.png" alt=""> 12
+                             </li>
+                             <li  class="gtrd">
+                                <img src="assets/img/caixas.png" alt=""> 213
+                             </li>
+                        </ul>
+                    </div>
+                    <div class="rota">
+                        <div class="status">
+                            Em Transporte
+                        </div>
+                        <ul>                            
+                            <li  class="titl">
+                               Motorista
+                            </li>
+                            <li  class="gtrd">
+                                Gustavo Bomfim
+                             </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="cardmenu">
+                    <div class="rotas">
+                        <ul>
+                            <li class="titl">
+                                Origem
+                            </li>
+                            <li  class="gtrd">
+                                Brasília / DF
+                            </li>
+                            <li  class="titl">
+                                Destino
+                            </li>
+                            <li  class="gtrd">
+                                Santos / SP
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rotas">
+                        <ul>                            
+                            <li  class="gtrd">
+                               <img src="assets/img/estrada.png" alt=""> 1231 km
+                            </li>
+                            <li  class="gtrd">
+                                <img src="assets/img/peso.png" alt=""> 123 ton
+                             </li>
+                             <li  class="gtrd">
+                                <img src="assets/img/estrada-com-pedagio.png" alt=""> 12
+                             </li>
+                             <li  class="gtrd">
+                                <img src="assets/img/caixas.png" alt=""> 213
+                             </li>
+                        </ul>
+                    </div>
+                    <div class="rota">
+                        <div class="status">
+                            Em Transporte
+                        </div>
+                        <ul>                            
+                            <li  class="titl">
+                               Motorista
+                            </li>
+                            <li  class="gtrd">
+                                Gustavo Bomfim
+                             </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="cardmenu">
+                    <div class="rotas">
+                        <ul>
+                            <li class="titl">
+                                Origem
+                            </li>
+                            <li  class="gtrd">
+                                Brasília / DF
+                            </li>
+                            <li  class="titl">
+                                Destino
+                            </li>
+                            <li  class="gtrd">
+                                Santos / SP
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rotas">
+                        <ul>                            
+                            <li  class="gtrd">
+                               <img src="assets/img/estrada.png" alt=""> 1231 km
+                            </li>
+                            <li  class="gtrd">
+                                <img src="assets/img/peso.png" alt=""> 123 ton
+                             </li>
+                             <li  class="gtrd">
+                                <img src="assets/img/estrada-com-pedagio.png" alt=""> 12
+                             </li>
+                             <li  class="gtrd">
+                                <img src="assets/img/caixas.png" alt=""> 213
+                             </li>
+                        </ul>
+                    </div>
+                    <div class="rota">
+                        <div class="status">
+                            Em Transporte
+                        </div>
+                        <ul>                            
+                            <li  class="titl">
+                               Motorista
+                            </li>
+                            <li  class="gtrd">
+                                Gustavo Bomfim
+                             </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+
+  
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script>
+        var map = L.map('map').setView([-23.958511, -46.329079], 13);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([-23.958511, -46.329079]).addTo(map)
+            .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+            .openPopup();
+
+            L.marker([-23.956511, -46.319079]).addTo(map)
+            .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+            .openPopup();
+    </script>
+</body>
+</html>
